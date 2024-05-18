@@ -36,7 +36,7 @@ hopkins.pval(Hopkins.Items, n = 8)
 
 library("quanteda.textmodels")
 tmod <- textmodel_ca(ExistingItems)
-tmod$sv
+tmod$rowcoord
 
 LLM.items <- corpus_subset(ClaudeItems, Generating.Source == "LLM.generated")
 LLMITEMS <- dfm(tokens(LLM.items), tolower = TRUE)
