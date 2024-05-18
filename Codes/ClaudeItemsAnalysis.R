@@ -24,7 +24,7 @@ LLMgeneratedItems <- corpus_subset(ClaudeItems, Generating.Source == "LLM.genera
 LLMGeneratedItems <- dfm(tokens(LLMgeneratedItems), tolower = TRUE)
 
 
-# let's see if the eigth first items
+# let's see if the eight first items
 # are clusterable or not.
 Hopkins.Items <- hopkins(as.matrix(ExistingItems))
 Hopkins.Items
@@ -41,4 +41,4 @@ tmod$sv
 LLM.items <- corpus_subset(ClaudeItems, Generating.Source == "LLM.generated")
 LLMITEMS <- dfm(tokens(LLM.items), tolower = TRUE)
 tmod2 <- textmodel_ca(LLM.items)
-tmod$sv
+tmod$rowinertia
