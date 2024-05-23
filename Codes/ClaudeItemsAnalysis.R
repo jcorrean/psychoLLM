@@ -26,6 +26,7 @@ LLMGeneratedItems <- dfm(tokens(LLMgeneratedItems), tolower = TRUE)
 
 # let's see if the eight first items
 # are clusterable or not.
+library(hopkins)
 Hopkins.Items <- hopkins(as.matrix(ExistingItems))
 Hopkins.Items
 hopkins.pval(Hopkins.Items, n = 8)
