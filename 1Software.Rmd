@@ -1,0 +1,13 @@
+# Software Used
+
+For our particular purpose, we rely on the following R packages and technology
+
+## Packages
+- readr 
+- quanteda
+- hopkins
+- bookdown
+
+## Technology
+- Rstudio
+- Netlify

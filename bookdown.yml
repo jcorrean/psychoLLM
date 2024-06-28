@@ -1,0 +1,22 @@
+book_filename: "Informational Analysis of LLM-generated Psychometric Items"
+delete_merged_file: true
+new_session: true
+language: 'en'
+label:
+  fig: 'Figura '
+tab: 'Table '
+eq: 'Equation '
+thm: 'Theorem '
+lem: 'Lemma '
+cor: 'Corollary '
+prp: 'Proposition '
+cnj: 'Conjecture '
+def: 'Definition '
+exm: 'Example '
+exr: 'Exercise '
+hyp: 'Hypothesis '
+proof: 'Proof. '
+remark: 'Remark. '
+solution: 'Solution. '
+ui:
+  chapter_name: "Capítulo "

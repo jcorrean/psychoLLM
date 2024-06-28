@@ -1,0 +1,12 @@
+/* custom.css */
+  body {
+    lang: es;
+  }
+
+/* Target all heading elements */
+  .book-summary .summary .summary-section .summary-title {
+    color: #b31e29; #7c0cc7
+  }
+h1, h2, h3, h4, h5, h6 {
+  color: #b31e29;#7c0cc7
+}
