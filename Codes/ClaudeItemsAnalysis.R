@@ -41,5 +41,6 @@ tmod$rowcoord
 
 LLM.items <- corpus_subset(ClaudeItems, Generating.Source == "LLM.generated")
 LLMITEMS <- dfm(tokens(LLM.items), tolower = TRUE)
-tmod2 <- textmodel_ca(LLM.items)
+tmod2 <- textmodel_ca(LLMITEMS)
+tmod2
 tmod$rowinertia
