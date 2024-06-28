@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Second Case: Anthropic’s Claude-generated items | Informational Analysis of LLM-generated Psychometric Items</title>
+  <meta name="description" content="2 Second Case: Anthropic’s Claude-generated items | Informational Analysis of LLM-generated Psychometric Items" />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Second Case: Anthropic’s Claude-generated items | Informational Analysis of LLM-generated Psychometric Items" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Second Case: Anthropic’s Claude-generated items | Informational Analysis of LLM-generated Psychometric Items" />
+  
+  
+  
+
+
+
+<meta name="date" content="2024-06-28" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="first-case-googles-gemini-generated-items.html"/>
+<link rel="next" href="references.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><span style="color: #7c0cc7;">Motivation</span></a></li>
+<li class="chapter" data-level="1" data-path="first-case-googles-gemini-generated-items.html"><a href="first-case-googles-gemini-generated-items.html"><i class="fa fa-check"></i><b>1</b> <span style="color: #7c0cc7;">First Case: Google’s Gemini-generated items</span></a></li>
+<li class="chapter" data-level="2" data-path="second-case-anthropics-claude-generated-items.html"><a href="second-case-anthropics-claude-generated-items.html"><i class="fa fa-check"></i><b>2</b> <span style="color: #7c0cc7;">Second Case: Anthropic’s Claude-generated items</span></a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><span style="color: #7c0cc7;">References</span></a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Informational Analysis of LLM-generated Psychometric Items</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="second-case-anthropics-claude-generated-items" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">2</span> <span style="color: #7c0cc7;">Second Case: Anthropic’s Claude-generated items</span><a href="second-case-anthropics-claude-generated-items.html#second-case-anthropics-claude-generated-items" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Like the first case, we are going to test the dimensionality of a sample of psychometric items generated by Anthropic’s Claude. We begin by opening the items as follows:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="second-case-anthropics-claude-generated-items.html#cb1-1" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-2"><a href="second-case-anthropics-claude-generated-items.html#cb1-2" tabindex="-1"></a>ClaudeTest <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;Data/ClaudeTest.csv&quot;</span>)</span>
+<span id="cb1-3"><a href="second-case-anthropics-claude-generated-items.html#cb1-3" tabindex="-1"></a>ClaudeTest<span class="sc">$</span>doc_id <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(ClaudeTest)</span></code></pre></div>
+<p>Then, we parsed these items as a computational linguistic corpus as follows:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="second-case-anthropics-claude-generated-items.html#cb2-1" tabindex="-1"></a><span class="fu">library</span>(quanteda)</span>
+<span id="cb2-2"><a href="second-case-anthropics-claude-generated-items.html#cb2-2" tabindex="-1"></a>ClaudeItems <span class="ot">&lt;-</span> <span class="fu">corpus</span>(ClaudeTest<span class="sc">$</span>item)</span>
+<span id="cb2-3"><a href="second-case-anthropics-claude-generated-items.html#cb2-3" tabindex="-1"></a><span class="fu">docvars</span>(ClaudeItems, <span class="st">&quot;Dimension&quot;</span>) <span class="ot">&lt;-</span> ClaudeTest<span class="sc">$</span>dimension</span>
+<span id="cb2-4"><a href="second-case-anthropics-claude-generated-items.html#cb2-4" tabindex="-1"></a><span class="fu">docvars</span>(ClaudeItems, <span class="st">&quot;Generating.Source&quot;</span>) <span class="ot">&lt;-</span> ClaudeTest<span class="sc">$</span>item.source</span>
+<span id="cb2-5"><a href="second-case-anthropics-claude-generated-items.html#cb2-5" tabindex="-1"></a><span class="fu">summary</span>(ClaudeItems)</span></code></pre></div>
+<pre><code>## Corpus consisting of 28 documents, showing 28 documents:
+## 
+##    Text Types Tokens Sentences              Dimension Generating.Source
+##   text1    19     19         1 AI.anxiety.in.learning    existing.scale
+##   text2    11     11         1 AI.anxiety.in.learning    existing.scale
+##   text3    15     15         1 AI.anxiety.in.learning    existing.scale
+##   text4    12     12         1 AI.anxiety.in.learning    existing.scale
+##   text5    13     13         1 AI.anxiety.in.learning    existing.scale
+##   text6    15     15         1 AI.anxiety.in.learning    existing.scale
+##   text7    11     11         1 AI.anxiety.in.learning    existing.scale
+##   text8    17     18         1 AI.anxiety.in.learning    existing.scale
+##   text9    13     13         1 AI.anxiety.in.learning     LLM.generated
+##  text10    17     18         1 AI.anxiety.in.learning     LLM.generated
+##  text11    11     11         1 AI.anxiety.in.learning     LLM.generated
+##  text12    10     10         1 AI.anxiety.in.learning     LLM.generated
+##  text13    12     12         1 AI.anxiety.in.learning     LLM.generated
+##  text14    15     15         1 AI.anxiety.in.learning     LLM.generated
+##  text15     9      9         1 AI.anxiety.in.learning     LLM.generated
+##  text16    13     13         1 AI.anxiety.in.learning     LLM.generated
+##  text17    13     13         1 AI.anxiety.in.learning     LLM.generated
+##  text18    12     12         1 AI.anxiety.in.learning     LLM.generated
+##  text19    13     13         1 AI.anxiety.in.learning     LLM.generated
+##  text20    14     14         1 AI.anxiety.in.learning     LLM.generated
+##  text21    14     14         1 AI.anxiety.in.learning     LLM.generated
+##  text22    12     12         1 AI.anxiety.in.learning     LLM.generated
+##  text23    11     11         1 AI.anxiety.in.learning     LLM.generated
+##  text24    13     13         1 AI.anxiety.in.learning     LLM.generated
+##  text25    12     12         1 AI.anxiety.in.learning     LLM.generated
+##  text26    15     15         1 AI.anxiety.in.learning     LLM.generated
+##  text27    14     14         1 AI.anxiety.in.learning     LLM.generated
+##  text28    13     14         1 AI.anxiety.in.learning     LLM.generated</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="second-case-anthropics-claude-generated-items.html#cb4-1" tabindex="-1"></a>ItemsData <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">summary</span>(ClaudeItems, <span class="at">n =</span> <span class="fu">length</span>(ClaudeItems)))</span></code></pre></div>
+<p>Now, let’s check the difference between the items generated by the LLM and those generated by humans in terms of the length of their statements as captured by the total number of words or “Tokens”.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="second-case-anthropics-claude-generated-items.html#cb5-1" tabindex="-1"></a><span class="fu">boxplot</span>(<span class="at">data =</span> ItemsData, Tokens <span class="sc">~</span> Generating.Source)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Now, let’s test other things</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="second-case-anthropics-claude-generated-items.html#cb6-1" tabindex="-1"></a>Items <span class="ot">&lt;-</span> <span class="fu">tokens</span>(ClaudeItems, </span>
+<span id="cb6-2"><a href="second-case-anthropics-claude-generated-items.html#cb6-2" tabindex="-1"></a>                   <span class="at">remove_numbers =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb6-3"><a href="second-case-anthropics-claude-generated-items.html#cb6-3" tabindex="-1"></a>                   <span class="at">remove_punct =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb6-4"><a href="second-case-anthropics-claude-generated-items.html#cb6-4" tabindex="-1"></a>                   <span class="at">remove_url =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb6-5"><a href="second-case-anthropics-claude-generated-items.html#cb6-5" tabindex="-1"></a>                   <span class="at">remove_symbols =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span>  </span>
+<span id="cb6-6"><a href="second-case-anthropics-claude-generated-items.html#cb6-6" tabindex="-1"></a>  <span class="fu">tokens_remove</span>(<span class="fu">stopwords</span>(<span class="st">&quot;english&quot;</span>))</span>
+<span id="cb6-7"><a href="second-case-anthropics-claude-generated-items.html#cb6-7" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="second-case-anthropics-claude-generated-items.html#cb6-8" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="second-case-anthropics-claude-generated-items.html#cb6-9" tabindex="-1"></a>CLAUDEITEMS <span class="ot">&lt;-</span> <span class="fu">dfm</span>(Items, <span class="at">tolower =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb6-10"><a href="second-case-anthropics-claude-generated-items.html#cb6-10" tabindex="-1"></a>existing.items <span class="ot">&lt;-</span> <span class="fu">corpus_subset</span>(ClaudeItems, Generating.Source <span class="sc">==</span> <span class="st">&quot;existing.scale&quot;</span>)</span>
+<span id="cb6-11"><a href="second-case-anthropics-claude-generated-items.html#cb6-11" tabindex="-1"></a>ExistingItems <span class="ot">&lt;-</span> <span class="fu">dfm</span>(<span class="fu">tokens</span>(existing.items), <span class="at">tolower =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb6-12"><a href="second-case-anthropics-claude-generated-items.html#cb6-12" tabindex="-1"></a>LLMgeneratedItems <span class="ot">&lt;-</span> <span class="fu">corpus_subset</span>(ClaudeItems, Generating.Source <span class="sc">==</span> <span class="st">&quot;LLM.generated&quot;</span>)</span>
+<span id="cb6-13"><a href="second-case-anthropics-claude-generated-items.html#cb6-13" tabindex="-1"></a>LLMGeneratedItems <span class="ot">&lt;-</span> <span class="fu">dfm</span>(<span class="fu">tokens</span>(LLMgeneratedItems), <span class="at">tolower =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<p>Let’s see if the eight first items are clusterable or not.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="second-case-anthropics-claude-generated-items.html#cb7-1" tabindex="-1"></a><span class="fu">library</span>(hopkins)</span>
+<span id="cb7-2"><a href="second-case-anthropics-claude-generated-items.html#cb7-2" tabindex="-1"></a>Hopkins.Items <span class="ot">&lt;-</span> <span class="fu">hopkins</span>(<span class="fu">as.matrix</span>(ExistingItems))</span>
+<span id="cb7-3"><a href="second-case-anthropics-claude-generated-items.html#cb7-3" tabindex="-1"></a>Hopkins.Items</span></code></pre></div>
+<pre><code>## [1] 0.9988548</code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="second-case-anthropics-claude-generated-items.html#cb9-1" tabindex="-1"></a><span class="fu">hopkins.pval</span>(Hopkins.Items, <span class="at">n =</span> <span class="dv">8</span>)</span></code></pre></div>
+<pre><code>## [1] 0</code></pre>
+<p>The Hopkins statistics suggests that these eight items are indeed measuring at least two dimensions. If this is correct we should be able to corroborate this as follows:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="second-case-anthropics-claude-generated-items.html#cb11-1" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;quanteda.textmodels&quot;</span>)</span>
+<span id="cb11-2"><a href="second-case-anthropics-claude-generated-items.html#cb11-2" tabindex="-1"></a>tmod <span class="ot">&lt;-</span> <span class="fu">textmodel_ca</span>(ExistingItems)</span>
+<span id="cb11-3"><a href="second-case-anthropics-claude-generated-items.html#cb11-3" tabindex="-1"></a>tmod<span class="sc">$</span>rowcoord</span></code></pre></div>
+<pre><code>##             Dim1        Dim2        Dim3        Dim4        Dim5       Dim6
+## text1 -0.3970016 -0.28468270 -1.75671257  0.96349007 -0.56259117 -0.1711068
+## text2  0.1448619  0.08645662  0.18461728 -1.45711592  1.27169006 -0.2292312
+## text3 -0.7302038  0.25593975 -0.68415016 -0.88124571  1.21302521 -0.8121923
+## text4 -1.0270783  0.32438450  0.96950983 -1.02370778 -2.18515355 -0.7592860
+## text5 -0.6493928 -0.15685767  0.18491643 -0.29956088  0.03357315  2.6613782
+## text6  1.7460144  1.82011748 -0.01826856  0.24325154 -0.27118541  0.1531388
+## text7 -0.9966321  0.36057341  1.69250015  2.06027289  0.93003089 -0.4672652
+## text8  1.2467994 -1.80570455  0.51263869  0.04486996 -0.10399464 -0.2604552</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="second-case-anthropics-claude-generated-items.html#cb13-1" tabindex="-1"></a>LLM.items <span class="ot">&lt;-</span> <span class="fu">corpus_subset</span>(ClaudeItems, Generating.Source <span class="sc">==</span> <span class="st">&quot;LLM.generated&quot;</span>)</span>
+<span id="cb13-2"><a href="second-case-anthropics-claude-generated-items.html#cb13-2" tabindex="-1"></a>LLMITEMS <span class="ot">&lt;-</span> <span class="fu">dfm</span>(<span class="fu">tokens</span>(LLM.items), <span class="at">tolower =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb13-3"><a href="second-case-anthropics-claude-generated-items.html#cb13-3" tabindex="-1"></a>tmod2 <span class="ot">&lt;-</span> <span class="fu">textmodel_ca</span>(LLMITEMS)</span>
+<span id="cb13-4"><a href="second-case-anthropics-claude-generated-items.html#cb13-4" tabindex="-1"></a>tmod2</span></code></pre></div>
+<pre><code>## $sv
+## [1] 0.7540322 0.7229723 0.6861019 0.6781010 0.6454005 0.6402642 0.6267941
+## [8] 0.6163890
+## 
+## $nd
+## [1] 8
+## 
+## $rownames
+##  [1] &quot;text9&quot;  &quot;text10&quot; &quot;text11&quot; &quot;text12&quot; &quot;text13&quot; &quot;text14&quot; &quot;text15&quot; &quot;text16&quot;
+##  [9] &quot;text17&quot; &quot;text18&quot; &quot;text19&quot; &quot;text20&quot; &quot;text21&quot; &quot;text22&quot; &quot;text23&quot; &quot;text24&quot;
+## [17] &quot;text25&quot; &quot;text26&quot; &quot;text27&quot; &quot;text28&quot;
+## 
+## $rowmass
+##  [1] 0.05038760 0.06976744 0.04263566 0.03875969 0.04651163 0.05813953
+##  [7] 0.03488372 0.05038760 0.05038760 0.04651163 0.05038760 0.05426357
+## [13] 0.05426357 0.04651163 0.04263566 0.05038760 0.04651163 0.05813953
+## [19] 0.05426357 0.05426357
+## 
+## $rowdist
+##  [1] 2.498415 2.077706 2.961969 3.087984 2.786901 2.275246 2.785688 2.413311
+##  [9] 2.617558 3.072516 2.878778 2.743194 2.360831 2.532110 2.959661 3.132729
+## [17] 2.433312 2.337395 2.202880 2.187098
+## 
+## $rowinertia
+##  [1] 0.3145232 0.3011765 0.3740538 0.3695987 0.3612474 0.3009736 0.2706997
+##  [8] 0.2934609 0.3452361 0.4390862 0.4175804 0.4083394 0.3024393 0.2982132
+## [15] 0.3734710 0.4945035 0.2753957 0.3176403 0.2633237 0.2595643
+## 
+## $rowcoord
+##                Dim1       Dim2        Dim3         Dim4        Dim5       Dim6
+## text9   0.446329396 -0.2509784 -0.85252957 -0.109154732 -0.55943341 -0.4760660
+## text10  0.648251180 -0.2292189 -1.22215579 -0.502006420 -0.48180659 -0.2202068
+## text11 -0.054150011  1.7189704  0.32297576 -0.539745341  2.24453071 -1.2028583
+## text12 -1.897550858 -0.3342392 -0.04078280  0.007741863 -0.14077688 -0.1054448
+## text13 -0.021542100  1.0174307  0.78088034  1.245807415  1.32708223 -1.3188185
+## text14  0.556023245 -0.9063908  0.32564936  0.450450511  1.38830102  1.9263182
+## text15 -0.041191947  0.2600152  0.38711536  0.549813371 -0.71006287  0.6446445
+## text16  0.585792461 -0.7577731 -0.92718002  0.077049958 -0.42043320 -0.4095875
+## text17 -0.672343385  0.4201149  0.58736668  1.260669623 -0.64197626 -0.1031673
+## text18  0.420526193 -1.1575242  3.10228598 -2.552143252 -0.81460249 -1.2702777
+## text19  0.232962010  1.9603328 -1.43114197 -2.678877841  0.08586426  0.9538585
+## text20 -0.121030491  2.2517322  0.95528655  0.580832931 -1.00742667  1.2008497
+## text21  0.475692974 -0.5160015 -0.63892472  0.577709146 -0.23089830 -1.1644858
+## text22  0.130933789  0.3803417  0.31163376  0.583790017  0.95010380 -1.0232359
+## text23  0.005135274  0.3021858  0.69315514  0.781193976 -2.48598872  0.8451243
+## text24 -3.662764471 -0.9362947 -0.58236381 -0.554175930  0.28047239  0.1728140
+## text25  0.308432158 -0.2218647 -0.03531152  0.449193760  0.02533950  0.2247199
+## text26  0.674655946 -1.2282094  0.60168453 -0.157921269  1.28780931  1.9082525
+## text27  0.407465240 -0.3492834 -0.24971542  0.682247747  0.15165721 -0.5708645
+## text28  0.638358025 -0.7411860 -1.09540954  0.038144724 -0.52392221 -0.5732024
+##              Dim7       Dim8
+## text9  -1.1740752 -2.0618837
+## text10  0.8040408  0.6668726
+## text11 -1.1144266  1.8367054
+## text12 -0.5744547 -0.1489632
+## text13  0.7526021 -0.3466759
+## text14 -0.3876978 -0.3249285
+## text15 -0.8675325 -0.3277206
+## text16  1.2653051  1.5308273
+## text17 -0.5968488 -0.5270039
+## text18  0.3882389 -0.3126678
+## text19 -0.7487195 -0.6251203
+## text20  2.3519790 -0.6300228
+## text21 -0.5167301 -1.6627387
+## text22 -0.5870586  0.5360025
+## text23 -2.2635691  2.1787666
+## text24  0.5976395  0.1122454
+## text25 -0.1087911 -0.1889448
+## text26  0.1578830  0.1540503
+## text27  0.2490984 -0.3560490
+## text28  0.9786506  0.8629519
+## 
+## $rowsup
+## logical(0)
+## 
+## $colnames
+##   [1] &quot;trying&quot;          &quot;to&quot;              &quot;understand&quot;      &quot;the&quot;            
+##   [5] &quot;advanced&quot;        &quot;algorithms&quot;      &quot;behind&quot;          &quot;ai&quot;             
+##   [9] &quot;systems&quot;         &quot;makes&quot;           &quot;me&quot;              &quot;anxious&quot;        
+##  [13] &quot;.&quot;               &quot;learning&quot;        &quot;how&quot;             &quot;tweak&quot;          
+##  [17] &quot;settings&quot;        &quot;of&quot;              &quot;an&quot;              &quot;system&quot;         
+##  [21] &quot;improve&quot;         &quot;its&quot;             &quot;performance&quot;     &quot;reading&quot;        
+##  [25] &quot;research&quot;        &quot;papers&quot;          &quot;about&quot;           &quot;new&quot;            
+##  [29] &quot;techniques&quot;      &quot;attending&quot;       &quot;seminars&quot;        &quot;on&quot;             
+##  [33] &quot;development&quot;     &quot;methods&quot;         &quot;different&quot;       &quot;programming&quot;    
+##  [37] &quot;languages&quot;       &quot;and&quot;             &quot;frameworks&quot;      &quot;figuring&quot;       
+##  [41] &quot;out&quot;             &quot;integrate&quot;       &quot;into&quot;            &quot;existing&quot;       
+##  [45] &quot;workflows&quot;       &quot;troubleshooting&quot; &quot;errors&quot;          &quot;in&quot;             
+##  [49] &quot;being&quot;           &quot;asked&quot;           &quot;explain&quot;         &quot;works&quot;          
+##  [53] &quot;enrolling&quot;       &quot;university&quot;      &quot;courses&quot;         &quot;machine&quot;        
+##  [57] &quot;attempting&quot;      &quot;build&quot;           &quot;my&quot;              &quot;own&quot;            
+##  [61] &quot;basic&quot;           &quot;prototype&quot;       &quot;books&quot;           &quot;that&quot;           
+##  [65] &quot;explore&quot;         &quot;social&quot;          &quot;implications&quot;    &quot;advances&quot;       
+##  [69] &quot;could&quot;           &quot;displace&quot;        &quot;human&quot;           &quot;jobs&quot;           
+##  [73] &quot;system&#39;s&quot;        &quot;training&quot;        &quot;data&quot;            &quot;models&quot;         
+##  [77] &quot;terms&quot;           &quot;concepts&quot;        &quot;related&quot;         &quot;adapting&quot;       
+##  [81] &quot;rapid&quot;           &quot;changes&quot;         &quot;technology&quot;      &quot;taking&quot;         
+##  [85] &quot;a&quot;               &quot;professional&quot;    &quot;course&quot;          &quot;working&quot;        
+##  [89] &quot;alongside&quot;       &quot;audit&quot;           &quot;for&quot;             &quot;bias&quot;           
+##  [93] &quot;workflow&quot;        &quot;with&quot;            &quot;assistant&quot;       &quot;customize&quot;      
+##  [97] &quot;behaviors&quot;       &quot;outputs&quot;         &quot;unable&quot;          &quot;decisions&quot;      
+## 
+## $colmass
+##   [1] 0.007751938 0.050387597 0.011627907 0.011627907 0.003875969 0.003875969
+##   [7] 0.003875969 0.077519380 0.015503876 0.081395349 0.077519380 0.077519380
+##  [13] 0.073643411 0.027131783 0.027131783 0.003875969 0.003875969 0.007751938
+##  [19] 0.023255814 0.011627907 0.003875969 0.007751938 0.003875969 0.007751938
+##  [25] 0.003875969 0.003875969 0.011627907 0.007751938 0.003875969 0.003875969
+##  [31] 0.003875969 0.011627907 0.007751938 0.003875969 0.003875969 0.003875969
+##  [37] 0.003875969 0.023255814 0.003875969 0.007751938 0.007751938 0.007751938
+##  [43] 0.003875969 0.003875969 0.003875969 0.003875969 0.003875969 0.015503876
+##  [49] 0.007751938 0.003875969 0.003875969 0.003875969 0.003875969 0.003875969
+##  [55] 0.003875969 0.003875969 0.003875969 0.003875969 0.007751938 0.003875969
+##  [61] 0.003875969 0.003875969 0.003875969 0.007751938 0.003875969 0.003875969
+##  [67] 0.003875969 0.003875969 0.003875969 0.003875969 0.003875969 0.003875969
+##  [73] 0.007751938 0.003875969 0.003875969 0.003875969 0.003875969 0.003875969
+##  [79] 0.003875969 0.003875969 0.003875969 0.003875969 0.003875969 0.003875969
+##  [85] 0.003875969 0.003875969 0.003875969 0.003875969 0.003875969 0.003875969
+##  [91] 0.003875969 0.003875969 0.003875969 0.003875969 0.003875969 0.003875969
+##  [97] 0.003875969 0.003875969 0.003875969 0.003875969
+## 
+## $coldist
+##   [1] 2.9272310 0.7907225 2.3022524 2.2367049 4.3412157 4.3412157 4.3412157
+##   [8] 0.1504505 2.1096922 0.2300540 0.1504505 0.1504505 0.2864704 1.3289295
+##  [15] 1.2611675 3.6514837 3.6514837 2.7467930 1.4010433 2.2012133 3.6514837
+##  [22] 2.6815063 3.6514837 3.1345135 4.7386227 4.7386227 2.4581637 3.1997869
+##  [29] 4.7386227 4.9799598 4.9799598 2.5053788 3.2266916 4.9799598 4.5276926
+##  [36] 4.5276926 4.5276926 1.4991043 4.5276926 2.7568098 2.7568098 2.7568098
+##  [43] 4.0249224 4.0249224 4.0249224 5.2599113 5.2599113 2.1563270 2.9272310
+##  [50] 4.3412157 4.3412157 4.3412157 4.3412157 4.3412157 4.3412157 4.3412157
+##  [57] 4.5276926 4.5276926 2.9453353 4.5276926 4.5276926 4.5276926 4.3412157
+##  [64] 2.9272310 4.3412157 4.3412157 4.3412157 4.1747541 4.1747541 4.1747541
+##  [71] 4.1747541 4.1747541 2.8660575 4.1747541 4.1747541 4.1747541 4.5276926
+##  [78] 4.5276926 4.5276926 4.7386227 4.7386227 4.7386227 4.7386227 4.3412157
+##  [85] 4.3412157 4.3412157 4.3412157 4.3412157 4.3412157 4.5276926 4.5276926
+##  [92] 4.5276926 4.0249224 4.0249224 4.0249224 4.1747541 4.1747541 4.1747541
+##  [99] 4.1747541 4.1747541
+## 
+## $colinertia
+##   [1] 0.066423886 0.031504443 0.061632166 0.058172663 0.073047108 0.073047108
+##   [7] 0.073047108 0.001754679 0.069004671 0.004307837 0.001754679 0.001754679
+##  [13] 0.006043569 0.047916185 0.043154280 0.051679587 0.051679587 0.058487378
+##  [19] 0.045649355 0.056341161 0.051679587 0.055740126 0.051679587 0.076164146
+##  [25] 0.087033122 0.087033122 0.070262425 0.079369274 0.087033122 0.096124031
+##  [31] 0.096124031 0.072987478 0.080709600 0.096124031 0.079457364 0.079457364
+##  [37] 0.079457364 0.052263112 0.079457364 0.058914729 0.058914729 0.058914729
+##  [43] 0.062790698 0.062790698 0.062790698 0.107235142 0.107235142 0.072089087
+##  [49] 0.066423886 0.073047108 0.073047108 0.073047108 0.073047108 0.073047108
+##  [55] 0.073047108 0.073047108 0.079457364 0.079457364 0.067248062 0.079457364
+##  [61] 0.079457364 0.079457364 0.073047108 0.066423886 0.073047108 0.073047108
+##  [67] 0.073047108 0.067552602 0.067552602 0.067552602 0.067552602 0.067552602
+##  [73] 0.063676633 0.067552602 0.067552602 0.067552602 0.079457364 0.079457364
+##  [79] 0.079457364 0.087033122 0.087033122 0.087033122 0.087033122 0.073047108
+##  [85] 0.073047108 0.073047108 0.073047108 0.073047108 0.073047108 0.079457364
+##  [91] 0.079457364 0.079457364 0.062790698 0.062790698 0.062790698 0.067552602
+##  [97] 0.067552602 0.067552602 0.067552602 0.067552602
+## 
+## $colcoord
+##                         Dim1        Dim2         Dim3        Dim4        Dim5
+## trying           0.611394540 -0.53043520 -1.086904328  0.34549013 -0.61228002
+## to               0.606569369 -0.62829532 -0.135545416 -0.02081063 -0.26169565
+## understand       0.689793859 -0.69535437 -1.256792791  0.24907751 -0.67877948
+## the              0.586863772  0.68243066 -1.703258777 -1.61728066 -0.49342782
+## advanced         0.591923503 -0.34714800 -1.242569868 -0.16097120 -0.86680034
+## algorithms       0.591923503 -0.34714800 -1.242569868 -0.16097120 -0.86680034
+## behind           0.591923503 -0.34714800 -1.242569868 -0.16097120 -0.86680034
+## ai              -0.062332573  0.04717742  0.072330237  0.01405545 -0.02139502
+## systems          0.420934547 -0.38701989 -0.063793866  0.49413836  0.05583519
+## makes           -0.019050427 -0.00388782 -0.007141189  0.01606482 -0.05903232
+## me              -0.062332573  0.04717742  0.072330237  0.01405545 -0.02139502
+## anxious         -0.062332573  0.04717742  0.072330237  0.01405545 -0.02139502
+## .               -0.110170734  0.10361796  0.160167077  0.01183456  0.02020411
+## learning         0.128862698  0.64599441  0.234864024  0.90600388  0.07148899
+## how              0.723534491 -0.87613040 -0.541868354  0.21850074  0.31584928
+## tweak            0.859712833 -0.31705071 -1.781303565 -0.74031214 -0.74652338
+## settings         0.859712833 -0.31705071 -1.781303565 -0.74031214 -0.74652338
+## of               0.584333906  1.19722000 -1.933603232 -2.34543539 -0.30674156
+## an               0.758193906 -0.88100934 -0.857914565  0.17579089 -0.05619089
+## system           0.827728402 -0.79679305 -1.576415631 -0.19014460 -0.73657722
+## improve          0.859712833 -0.31705071 -1.781303565 -0.74031214 -0.74652338
+## its              0.853152666 -0.67112171 -1.688936640 -0.34202993 -0.77915089
+## performance      0.859712833 -0.31705071 -1.781303565 -0.74031214 -0.74652338
+## reading          0.118570529  2.54456709 -0.807581346 -2.37326230  1.80538661
+## research        -0.071813922  2.37764347  0.470740206 -0.79596597  3.47773294
+## papers          -0.071813922  2.37764347  0.470740206 -0.79596597  3.47773294
+## about           -0.086964719  2.29982676  1.000406594  0.63259749  1.32433847
+## new              0.050915449  1.45186204  0.462474675  0.03247649  2.47492396
+## techniques      -0.071813922  2.37764347  0.470740206 -0.79596597  3.47773294
+## attending       -2.516538147 -0.46231260 -0.059441309  0.01141698 -0.21812327
+## seminars        -2.516538147 -0.46231260 -0.059441309  0.01141698 -0.21812327
+## on              -2.755257450 -0.39209386 -0.017383194  0.35109594 -0.25941552
+## development     -3.687054178 -0.87868782 -0.454121021 -0.40291494  0.10822389
+## methods         -2.516538147 -0.46231260 -0.059441309  0.01141698 -0.21812327
+## different       -0.028569204  1.40728862  1.138140441  1.83720032  2.05621495
+## programming     -0.028569204  1.40728862  1.138140441  1.83720032  2.05621495
+## languages       -0.028569204  1.40728862  1.138140441  1.83720032  2.05621495
+## and              0.193676462  0.01065316  0.271312949  1.17993099  0.76032106
+## frameworks      -0.028569204  1.40728862  1.138140441  1.83720032  2.05621495
+## figuring         0.816065382 -1.47626686  0.675798933  0.21569739  2.07321669
+## out              0.816065382 -1.47626686  0.675798933  0.21569739  2.07321669
+## integrate        0.816065382 -1.47626686  0.675798933  0.21569739  2.07321669
+## into             0.737399845 -1.25370058  0.474637006  0.66428231  2.15106889
+## existing         0.737399845 -1.25370058  0.474637006  0.66428231  2.15106889
+## workflows        0.737399845 -1.25370058  0.474637006  0.66428231  2.15106889
+## troubleshooting -0.054628894  0.35964755  0.564224276  0.81081337 -1.10018946
+## errors          -0.054628894  0.35964755  0.564224276  0.81081337 -1.10018946
+## in              -0.274998376  1.11831670  0.955734002  1.16963026 -1.87691760
+## being            0.811736187 -1.03666422 -1.473971665  0.08493918 -0.73160414
+## asked            0.776879876 -1.04813574 -1.351373614  0.11362608 -0.65142988
+## explain          0.776879876 -1.04813574 -1.351373614  0.11362608 -0.65142988
+## works            0.776879876 -1.04813574 -1.351373614  0.11362608 -0.65142988
+## enrolling       -0.891663994  0.58109405  0.856092460  1.85911772 -0.99469434
+## university      -0.891663994  0.58109405  0.856092460  1.85911772 -0.99469434
+## courses         -0.891663994  0.58109405  0.856092460  1.85911772 -0.99469434
+## machine         -0.891663994  0.58109405  0.856092460  1.85911772 -0.99469434
+## attempting       0.557703211 -1.60106292  4.521611015 -3.76366230 -1.26216581
+## build            0.557703211 -1.60106292  4.521611015 -3.76366230 -1.26216581
+## my               0.726217065 -1.64994803  2.699285938 -1.99827491  0.36659934
+## own              0.557703211 -1.60106292  4.521611015 -3.76366230 -1.26216581
+## basic            0.557703211 -1.60106292  4.521611015 -3.76366230 -1.26216581
+## prototype        0.557703211 -1.60106292  4.521611015 -3.76366230 -1.26216581
+## books            0.308954979  2.71149071 -2.085902899 -3.95055863  0.13304027
+## that             0.074221973  2.91301945 -0.346781882 -1.54700026 -0.71394611
+## explore          0.308954979  2.71149071 -2.085902899 -3.95055863  0.13304027
+## social           0.308954979  2.71149071 -2.085902899 -3.95055863  0.13304027
+## implications     0.308954979  2.71149071 -2.085902899 -3.95055863  0.13304027
+## advances        -0.160511033  3.11454818  1.392339136  0.85655811 -1.56093249
+## could           -0.160511033  3.11454818  1.392339136  0.85655811 -1.56093249
+## displace        -0.160511033  3.11454818  1.392339136  0.85655811 -1.56093249
+## human           -0.160511033  3.11454818  1.392339136  0.85655811 -1.56093249
+## jobs            -0.160511033  3.11454818  1.392339136  0.85655811 -1.56093249
+## system&#39;s         0.585623654 -0.59842188 -0.647600679  0.92903333 -0.06138908
+## training         0.630865576 -0.71372239 -0.931238788  0.85195145 -0.35775969
+## data             0.630865576 -0.71372239 -0.931238788  0.85195145 -0.35775969
+## models           0.630865576 -0.71372239 -0.931238788  0.85195145 -0.35775969
+## terms            0.173644819  0.52608061  0.454209143  0.86091895  1.47211498
+## concepts         0.173644819  0.52608061  0.454209143  0.86091895  1.47211498
+## related          0.173644819  0.52608061  0.454209143  0.86091895  1.47211498
+## adapting         0.006810417  0.41797703  1.010280135  1.15203185 -3.85185412
+## rapid            0.006810417  0.41797703  1.010280135  1.15203185 -3.85185412
+## changes          0.006810417  0.41797703  1.010280135  1.15203185 -3.85185412
+## technology       0.006810417  0.41797703  1.010280135  1.15203185 -3.85185412
+## taking          -4.857570208 -1.29506303 -0.848800733 -0.81724686  0.43457105
+## a               -4.857570208 -1.29506303 -0.848800733 -0.81724686  0.43457105
+## professional    -4.857570208 -1.29506303 -0.848800733 -0.81724686  0.43457105
+## course          -4.857570208 -1.29506303 -0.848800733 -0.81724686  0.43457105
+## working         -4.857570208 -1.29506303 -0.848800733 -0.81724686  0.43457105
+## alongside       -4.857570208 -1.29506303 -0.848800733 -0.81724686  0.43457105
+## audit            0.409043735 -0.30687854 -0.051466878  0.66242897  0.03926167
+## for              0.409043735 -0.30687854 -0.051466878  0.66242897  0.03926167
+## bias             0.409043735 -0.30687854 -0.051466878  0.66242897  0.03926167
+## workflow         0.894730920 -1.69883314  0.876960861 -0.23288753  1.99536449
+## with             0.894730920 -1.69883314  0.876960861 -0.23288753  1.99536449
+## assistant        0.894730920 -1.69883314  0.876960861 -0.23288753  1.99536449
+## customize        0.540381733 -0.48312136 -0.363962569  1.00611520  0.23498154
+## behaviors        0.540381733 -0.48312136 -0.363962569  1.00611520  0.23498154
+## outputs          0.540381733 -0.48312136 -0.363962569  1.00611520  0.23498154
+## unable           0.846592499 -1.02519271 -1.596569716  0.05625227 -0.81177839
+## decisions        0.846592499 -1.02519271 -1.596569716  0.05625227 -0.81177839
+##                          Dim6        Dim7        Dim8
+## trying          -1.2811522409 -1.34877256 -3.02132447
+## to              -0.1229923150 -0.04794414  0.21079736
+## understand      -1.1525212249 -0.37872870 -1.54754569
+## the              0.1341038593 -0.59496092 -1.09245481
+## advanced        -0.7435462012 -1.87314340 -3.34510135
+## algorithms      -0.7435462012 -1.87314340 -3.34510135
+## behind          -0.7435462012 -1.87314340 -3.34510135
+## ai              -0.0438595453 -0.11123802  0.02966495
+## systems          0.9057263868 -1.01233271 -1.17761577
+## makes           -0.0844023856 -0.03159054  0.09491956
+## me              -0.0438595453 -0.11123802  0.02966495
+## anxious         -0.0438595453 -0.11123802  0.02966495
+## .                0.0009509625 -0.19926945 -0.04245858
+## learning        -0.4040125682  0.65298773 -0.19603141
+## how              0.5099300204  0.67429049  0.54343691
+## tweak           -0.3439311772  1.28278299  1.08190213
+## settings        -0.3439311772  1.28278299  1.08190213
+## of               0.5729288895  0.04413032  0.03386846
+## an              -0.2681430702  0.78129002  0.32336571
+## system          -0.6263022449  1.62094516  1.65515165
+## improve         -0.3439311772  1.28278299  1.08190213
+## its             -0.6195951851  1.42207101  1.24095700
+## performance     -0.3439311772  1.28278299  1.08190213
+## reading         -0.1944508139 -1.48625062  0.98280886
+## research        -1.8786905840 -1.77797891  2.97978291
+## papers          -1.8786905840 -1.77797891  2.97978291
+## about           -0.6876469644  1.05837770  0.46507795
+## new             -1.7384184732 -1.35729209  1.92468388
+## techniques      -1.8786905840 -1.77797891  2.97978291
+## attending       -0.1646895274 -0.91649674 -0.24167079
+## seminars        -0.1646895274 -0.91649674 -0.24167079
+## on              -0.0186371718 -0.30507845 -0.30485170
+## development      0.0526104760  0.01849473 -0.02978464
+## methods         -0.1646895274 -0.91649674 -0.24167079
+## different       -2.0598036734  1.20071678 -0.56243031
+## programming     -2.0598036734  1.20071678 -0.56243031
+## languages       -2.0598036734  1.20071678 -0.56243031
+## and             -0.5868030299 -0.28893988 -0.72502737
+## frameworks      -2.0598036734  1.20071678 -0.56243031
+## figuring         2.9945222692 -0.18332563 -0.13861232
+## out              2.9945222692 -0.18332563 -0.13861232
+## integrate        2.9945222692 -0.18332563 -0.13861232
+## into             3.0086302745 -0.61854093 -0.52714843
+## existing         3.0086302745 -0.61854093 -0.52714843
+## workflows        3.0086302745 -0.61854093 -0.52714843
+## troubleshooting  1.0068414654 -1.38407903 -0.53167823
+## errors           1.0068414654 -1.38407903 -0.53167823
+## in               1.0103060339 -0.54881319  0.28148596
+## being           -0.7674877787  1.79002625  1.94177641
+## asked           -0.6397163643  2.01869348  2.48354095
+## explain         -0.6397163643  2.01869348  2.48354095
+## works           -0.6397163643  2.01869348  2.48354095
+## enrolling       -0.1611324675 -0.95222480 -0.85498582
+## university      -0.1611324675 -0.95222480 -0.85498582
+## courses         -0.1611324675 -0.95222480 -0.85498582
+## machine         -0.1611324675 -0.95222480 -0.85498582
+## attempting      -1.9839899901  0.61940431 -0.50725732
+## build           -1.9839899901  0.61940431 -0.50725732
+## my               0.4982121370  0.43564699 -0.12866676
+## own             -1.9839899901  0.61940431 -0.50725732
+## basic           -1.9839899901  0.61940431 -0.50725732
+## prototype       -1.9839899901  0.61940431 -0.50725732
+## books            1.4897889562 -1.19452234 -1.01416520
+## that             1.6826711602  1.27893645 -1.01814197
+## explore          1.4897889562 -1.19452234 -1.01416520
+## social           1.4897889562 -1.19452234 -1.01416520
+## implications     1.4897889562 -1.19452234 -1.01416520
+## advances         1.8755533642  3.75239524 -1.02211874
+## could            1.8755533642  3.75239524 -1.02211874
+## displace         1.8755533642  3.75239524 -1.02211874
+## human            1.8755533642  3.75239524 -1.02211874
+## jobs             1.8755533642  3.75239524 -1.02211874
+## system&#39;s        -1.3551829753 -0.21349252 -1.63759224
+## training        -1.8187582805 -0.82440173 -2.69754759
+## data            -1.8187582805 -0.82440173 -2.69754759
+## models          -1.8187582805 -0.82440173 -2.69754759
+## terms           -1.5981463625 -0.93660527  0.86958484
+## concepts        -1.5981463625 -0.93660527  0.86958484
+## related         -1.5981463625 -0.93660527  0.86958484
+## adapting         1.3199617734 -3.61134417  3.53472664
+## rapid            1.3199617734 -3.61134417  3.53472664
+## changes          1.3199617734 -3.61134417  3.53472664
+## technology       1.3199617734 -3.61134417  3.53472664
+## taking           0.2699104794  0.95348620  0.18210151
+## a                0.2699104794  0.95348620  0.18210151
+## professional     0.2699104794  0.95348620  0.18210151
+## course           0.2699104794  0.95348620  0.18210151
+## working          0.2699104794  0.95348620  0.18210151
+## alongside        0.2699104794  0.95348620  0.18210151
+## audit            0.3509800087 -0.17356749 -0.30653506
+## for              0.3509800087 -0.17356749 -0.30653506
+## bias             0.3509800087 -0.17356749 -0.30653506
+## workflow         2.9804142640  0.25188967  0.24992380
+## with             2.9804142640  0.25188967  0.24992380
+## assistant        2.9804142640  0.25188967  0.24992380
+## customize       -0.8916076701  0.39741668 -0.57763690
+## behaviors       -0.8916076701  0.39741668 -0.57763690
+## outputs         -0.8916076701  0.39741668 -0.57763690
+## unable          -0.8952591931  1.56135902  1.40001188
+## decisions       -0.8952591931  1.56135902  1.40001188
+## 
+## $colsup
+## logical(0)
+## 
+## $call
+## textmodel_ca.dfm(x = LLMITEMS)
+## 
+## attr(,&quot;class&quot;)
+## [1] &quot;textmodel_ca&quot; &quot;ca&quot;           &quot;list&quot;</code></pre>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="second-case-anthropics-claude-generated-items.html#cb15-1" tabindex="-1"></a>tmod<span class="sc">$</span>rowinertia</span></code></pre></div>
+<pre><code>## [1] 0.1842105 0.1141148 0.1406433 0.1905702 0.1167341 0.3406433 0.2080542
+## [8] 0.3115497</code></pre>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="first-case-googles-gemini-generated-items.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
