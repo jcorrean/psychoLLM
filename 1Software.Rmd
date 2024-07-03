@@ -1,13 +1,11 @@
-# Software Used
+<span style="color: #7c0cc7;"> Technology and software libraries</span>
 
-For our particular purpose, we rely on the following R packages and technology
+For our particular purpose, we rely on the following R packages
 
-## Packages
 - readr 
 - quanteda
 - hopkins
 - bookdown
+- entropy
 
-## Technology
-- Rstudio
-- Netlify
+These packages were used as a small RMarkdown-based project with Rstudio and Netlify.
