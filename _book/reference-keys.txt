@@ -4,3 +4,4 @@ technology
 first-case-googles-gemini-generated-items
 technology-and-software-libraries
 second-case-anthropics-claude-generated-items
+applying-information-theory

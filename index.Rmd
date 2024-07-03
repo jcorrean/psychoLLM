@@ -2,8 +2,8 @@
 title: "Informational Analysis of LLM-generated Psychometric Items"
 author: 
   - name: Juan C. Correa
-email: jcc@criticalcentrality.com
-affiliation: Critical Centrality Institute
+    affiliation: Critical Centrality Institute 
+    email: jcc@criticalcentrality.com
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
