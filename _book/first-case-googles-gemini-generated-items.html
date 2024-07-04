@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2024-07-02" />
+<meta name="date" content="2024-07-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -225,9 +225,9 @@ div.csl-indent {
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="first-case-googles-gemini-generated-items.html#cb5-1" tabindex="-1"></a><span class="fu">library</span>(hopkins)</span>
 <span id="cb5-2"><a href="first-case-googles-gemini-generated-items.html#cb5-2" tabindex="-1"></a>Hopkins <span class="ot">&lt;-</span> <span class="fu">hopkins</span>(ItemsData[<span class="fu">c</span>(<span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>)])</span>
 <span id="cb5-3"><a href="first-case-googles-gemini-generated-items.html#cb5-3" tabindex="-1"></a>Hopkins</span></code></pre></div>
-<pre><code>## [1] 0.8232379</code></pre>
+<pre><code>## [1] 0.9844664</code></pre>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="first-case-googles-gemini-generated-items.html#cb7-1" tabindex="-1"></a><span class="fu">hopkins.pval</span>(Hopkins, <span class="at">n =</span> <span class="dv">20</span>)</span></code></pre></div>
-<pre><code>## [1] 3.747335e-06</code></pre>
+<pre><code>## [1] 0</code></pre>
 <p>The Hopkins statistic should be below the threshold of 0.5 to consider that the matrix is clusterable. Thus, the generated items, treated as a corpus can not be regarded as a linguistic corpus that can be split into several dimensions.</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="first-case-googles-gemini-generated-items.html#cb9-1" tabindex="-1"></a>Hopkins.Items <span class="ot">&lt;-</span> <span class="fu">hopkins</span>(<span class="fu">as.matrix</span>(GEMINIItems))</span>
 <span id="cb9-2"><a href="first-case-googles-gemini-generated-items.html#cb9-2" tabindex="-1"></a>Hopkins.Items</span></code></pre></div>
